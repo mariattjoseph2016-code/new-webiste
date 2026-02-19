@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Mariatt, Febi & Sijo — Friends Hub</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <meta name="description" content="A small site for friends: Mariatt Talla, Febi, and Sijo." />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">FriendsHub</a>
+      <button class="menu-toggle" aria-label="Toggle menu">☰</button>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="mariatt.html">Mariatt Talla</a></li>
+          <li><a href="febi.html">Febi</a></li>
+          <li><a href="sijo.html">Sijo</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h1>Welcome to the Friends Hub</h1>
+        <p>Profiles and tiny interactive features for Mariatt Talla, Febi, and Sijo.</p>
+        <p><a class="btn" href="mariatt.html">Visit Mariatt</a> <a class="btn" href="febi.html">Visit Febi</a> <a class="btn" href="sijo.html">Visit Sijo</a></p>
+      </div>
+    </section>
+
+    <section class="container about">
+      <h2>About the Group</h2>
+      <p>We're a small crew that loves sharing stuff — photos, favorite finds, and a few good quotes.</p>
+    </section>
+
+    <section id="contact" class="container contact">
+      <h2>Contact</h2>
+      <form id="contactForm">
+        <label for="name">Name</label>
+        <input id="name" name="name" required />
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" required />
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="4"></textarea>
+        <button type="submit" class="btn">Send</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">© <span id="year"></span> FriendsHub</div>
+  </footer>
+
+  <script src="js/script.js" defer></script>
+  <script src="js/friends.js" defer></script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechStore - Your Tech Shop</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">TechStore</div>
+            <div class="nav-links">
+                <a href="index.html" class="active">Home</a>
+                <a href="products.html">Products</a>
+                <a href="cart.html" class="cart-link">Cart <span id="cart-count" class="cart-count">0</span></a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Welcome to TechStore</h1>
+            <p>Your destination for quality tech products</p>
+            <a href="products.html" class="btn btn-primary">Shop Now</a>
+        </div>
+    </header>
+
+    <section class="featured-products">
+        <div class="container">
+            <h2>Featured Products</h2>
+            <div class="products-grid" id="featured-products">
+                <!-- Products loaded by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 TechStore. All rights reserved.</p>
+            <p>Simple Static E-Commerce Store</p>
+        </div>
+    </footer>
+
+    <script src="products-data.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
